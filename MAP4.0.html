@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html>
-<body>
-<ul id="navbar">
-				
-				<li class ="navitem"><a href ="DV.html">Home</a></li>
-				<li class ="navitem"><a href ="MAP4.0.html">Big Ol' Map </a></li>
-				<li class ="navitem"><a href ="QoL.html">Specific places for Destinations </a></li>
-				
-			</ul>
-			
-<div id="map" style="width:100%;height:1000px"></div>
-
-<script>
+<head>
+	<link rel="stylesheet" type="text/css"
+			href="LoLisTRASH.css">
+			<script>
 function myMap() {
   var london = new google.maps.LatLng(51.508742,-0.120850);
   var DC = new google.maps.LatLng(38.8932944,-77.0363697);
@@ -28,7 +20,7 @@ function myMap() {
   var OXFORD = new google.maps.LatLng(51.7566374,-1.256887);
   var HAWAII = new google.maps.LatLng(21.4387377,-157.9972334);
   var SF = new google.maps.LatLng(37.7510446,-122.437785);
-  var LA = new google.maps.LatLng(34.0718543,-118.3588497);
+   var LA = new google.maps.LatLng(34.0718543,-118.3588497);
   
   var mapCanvas = document.getElementById("map");
   var mapOptions = {center: LA, zoom: 4};
@@ -46,6 +38,19 @@ function myMap() {
 
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNMZiSPpyzDA3vzK3h4Ck_qQyTigqBZsw&callback=myMap" async defer></script>
+
+</head>
+<body>
+<ul id="navbar">
+				
+				<li class ="navitem"><a href ="DV.html">Home</a></li>
+				<li class ="navitem"><a href ="MAP4.0.html">Big Ol' Map </a></li>
+				<li class ="navitem"><a href ="QoL.html">Specific places for Destinations </a></li>
+				
+			</ul>
+			
+<div id="map" style="width:100%;height:1000px;margin-top:30px"></div>
+
 
 </body>
 </html>
